@@ -33,7 +33,7 @@ export class HomeComponent {
       Validators.pattern('^((?!mariogiron).)*$'),
       Validators.minLength(4),
       Validators.maxLength(20)
-    ]
+    ] 
   })
   chart: Chart | undefined
 
