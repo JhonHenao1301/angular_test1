@@ -2,7 +2,9 @@
   <header class="flex flex-col gap-4 items-center">
     <h1 class="text-3xl font-bold">Technical test</h1>
     <hr />
-    <div class="flex gap-3 justify-center">
+    <div
+      class="flex flex-col items-center gap-3 justify-center sm:flex-row sm:items-start"
+    >
       <mat-form-field>
         <mat-label>Enter username</mat-label>
         <input
@@ -21,7 +23,7 @@
       <button
         type="submit"
         (onSubmit)="searchUsers($event)"
-        class="bg-sky-700 text-slate-200 font-semibold rounded-md h-12 p-2 ml-2"
+        class="bg-sky-700 text-slate-200 font-semibold rounded-md h-12 p-2 ml-2 w-full sm:w-auto"
       >
         Find users
       </button>
@@ -38,7 +40,7 @@
       class="flex justify-center items-center gap-6 flex-auto h-auto px-4 w-full xl:w-1/2"
     >
       <div
-        class="grid grid-cols-2 gap-4 justify-center mt-8 w-full md:grid-cols-3 xl:grid-cols-1"
+        class="grid grid-cols-1 gap-4 justify-center mt-8 w-full sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-1"
       >
         @for (item of users; track $index) {
         <div
